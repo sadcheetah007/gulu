@@ -27,17 +27,18 @@ yesBtn.addEventListener("click", ()=>{
   document.body.innerHTML = `
     <div style="
       height:100vh;
+      background:#5b0f1a;
       display:flex;
       align-items:center;
       justify-content:center;
-      flex-direction:column;
-      background:#5b0f1a;
       color:white;
-      text-align:center;
       font-family:'Playfair Display', serif;
-    ">
-      <h1>He said yes</h1>
-      <p>You're officially gulu’s valentine, for life</p>
+      text-align:center;
+      animation:fade 1.5s;">
+      <div>
+        <h1 style="font-size:42px;margin-bottom:12px;">He said yes</h1>
+        <p style="font-size:18px;">Mr Parva G is officially gulu's valentine</p>
+      </div>
     </div>
   `;
 });
