@@ -32,11 +32,11 @@ yesBtn.addEventListener("click", ()=>{
       align-items:center;
       justify-content:center;
       flex-direction:column;
-      background:#ff9a9e;
+      background:#800000;
       color:white;
       text-align:center;
     ">
-      <h1>YAYYYY</h1>
+      <h1>yayy</h1>
       <h2>HE SAID YESSSS🙈</h2>
       <p>you're my offciial valentine, for life💋</p>
     </div>
