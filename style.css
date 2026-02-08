@@ -20,34 +20,6 @@ body {
   padding: 20px;
 }
 
-/* FLOATING HEARTS */
-.heart-floating {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background: pink;
-  clip-path: polygon(
-    50% 0%, 61% 15%, 75% 15%, 80% 30%, 50% 60%,
-    20% 30%, 25% 15%, 39% 15%
-  );
-  opacity: 0.7;
-  animation: floatHeart 8s linear infinite;
-}
-
-@keyframes floatHeart {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 0.7;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-600px) rotate(360deg);
-    opacity: 0;
-  }
-}
-
 /* CARD CONTENT - plain centered text */
 .card h1 {
   font-size: 32px;
@@ -104,4 +76,31 @@ button {
   color: #ffb3b3;
   height: 18px;
   margin-top: 10px;
+}
+
+/* FLOATING HEARTS */
+.heart-floating {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  clip-path: polygon(
+    50% 0%, 61% 15%, 75% 15%, 80% 30%, 50% 60%, 20% 30%, 25% 15%, 39% 15%
+  );
+  opacity: 0.7;
+  animation: floatHeart 8s linear infinite;
+}
+
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600px) rotate(360deg);
+    opacity: 0;
+  }
 }
