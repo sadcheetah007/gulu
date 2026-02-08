@@ -1,58 +1,43 @@
-const yesBtn = document.getElementById("yes");
 const noBtn = document.getElementById("no");
-const noMsg = document.getElementById("no-msg");
+const yesBtn = document.getElementById("yes");
+const funny = document.getElementById("funny");
 
-const messages = [
+const msgs = [
   "Nice try",
-  "Wrong answer",
-  "Not happening",
-  "Try again",
-  "Be serious",
+  "Wrong choice",
   "No is disabled",
-  "Decorative button",
-  "System error",
+  "System override",
   "Access denied",
-  "Cute attempt"
+  "Try again",
+  "Not permitted",
+  "Control belongs to gulu"
 ];
 
-/* No button behavior */
-noBtn.addEventListener("mouseenter", () => {
+noBtn.addEventListener("mouseover", move);
+noBtn.addEventListener("click", move);
 
-  // move slightly, not across screen
-  const x = Math.random()*60 - 30;
-  const y = Math.random()*40 - 20;
-
+function move(){
+  const x = Math.random() * 120 - 60;
+  const y = Math.random() * 80 - 40;
   noBtn.style.transform = `translate(${x}px, ${y}px)`;
+  funny.innerText = msgs[Math.floor(Math.random()*msgs.length)];
+}
 
-  // message near button
-  noMsg.innerText = messages[Math.floor(Math.random()*messages.length)];
-});
-
-/* Yes click */
 yesBtn.addEventListener("click", ()=>{
   document.body.innerHTML = `
     <div style="
       height:100vh;
-      background:#5b0f1a;
       display:flex;
       align-items:center;
       justify-content:center;
+      flex-direction:column;
+      background:#5b0f1a;
       color:white;
-      font-family:'Playfair Display', serif;
       text-align:center;
-      animation:fade 1.5s;">
-      <div>
-        <h1 style="font-size:42px;margin-bottom:12px;">He said yes</h1>
-        <p style="font-size:18px;">Mr Parva G is officially gulu's valentine</p>
-      </div>
+      font-family:'Playfair Display', serif;
+    ">
+      <h1>She said yes</h1>
+      <p>Mr Parva G is officially gulu’s valentine</p>
     </div>
   `;
 });
-
-const style = document.createElement("style");
-style.innerHTML = `
-@keyframes fade{
-  from{opacity:0;}
-  to{opacity:1;}
-}`;
-document.head.appendChild(style);
