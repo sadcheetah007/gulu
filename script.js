@@ -42,3 +42,13 @@ yesBtn.addEventListener("click", ()=>{
     </div>
   `;
 });
+
+/* FLOATING HEARTS */
+for(let i = 0; i < 10; i++){
+  const heart = document.createElement("div");
+  heart.classList.add("heart-floating");
+  heart.style.left = Math.random() * window.innerWidth + "px";
+  heart.style.width = heart.style.height = (20 + Math.random()*20) + "px";
+  heart.style.animationDelay = Math.random() * 5 + "s";
+  document.body.appendChild(heart);
+}
