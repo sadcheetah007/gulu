@@ -36,7 +36,7 @@ yesBtn.addEventListener("click", ()=>{
       text-align:center;
       font-family:'Playfair Display', serif;
     ">
-      <h1>He said yes!!</h1>
+      <h1>He said yes</h1>
       <p>You're officially gulu’s valentine, for life</p>
     </div>
   `;
