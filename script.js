@@ -37,13 +37,12 @@ yesBtn.addEventListener("click", ()=>{
       text-align:center;
     ">
       <h1>YAYYYY</h1>
-      <h2>HE SAID YESSSS</h2>
-      <p>you're my offciial valentine, for life</p>
+      <h2>HE SAID YESSSS🙈</h2>
+      <p>you're my offciial valentine, for life💋</p>
     </div>
   `;
 });
 
-/* FLOATING HEARTS */
 for(let i = 0; i < 10; i++){
   const heart = document.createElement("div");
   heart.classList.add("heart-floating");
