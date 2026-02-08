@@ -4,21 +4,22 @@ const funny = document.getElementById("funny");
 
 const msgs = [
   "Nice try",
-  "Wrong choice",
-  "No is disabled",
-  "System override",
+  "Wrong button",
+  "Nope",
+  "System error",
   "Access denied",
-  "Try again",
-  "Not permitted",
-  "Control belongs to gulu"
+  "Try again budu",
+  "Not allowed",
+  "Bug in the system",
+  "controlled by gulu"
 ];
 
 noBtn.addEventListener("mouseover", move);
 noBtn.addEventListener("click", move);
 
 function move(){
-  const x = Math.random() * 120 - 60;
-  const y = Math.random() * 80 - 40;
+  const x = Math.random() * 200 - 100;
+  const y = Math.random() * 100 - 50;
   noBtn.style.transform = `translate(${x}px, ${y}px)`;
   funny.innerText = msgs[Math.floor(Math.random()*msgs.length)];
 }
@@ -27,18 +28,17 @@ yesBtn.addEventListener("click", ()=>{
   document.body.innerHTML = `
     <div style="
       height:100vh;
-      background:#5b0f1a;
       display:flex;
       align-items:center;
       justify-content:center;
+      flex-direction:column;
+      background:#ff9a9e;
       color:white;
-      font-family:'Playfair Display', serif;
       text-align:center;
-      animation:fade 1.5s;">
-      <div>
-        <h1 style="font-size:42px;margin-bottom:12px;">He said yes</h1>
-        <p style="font-size:18px;">Mr Parva G is officially gulu's valentine</p>
-      </div>
+    ">
+      <h1>YAYYYY</h1>
+      <h2>HE SAID YESSSS</h2>
+      <p>you're my offciial valentine, for life</p>
     </div>
   `;
 });
